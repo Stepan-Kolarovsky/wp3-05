@@ -1,4 +1,5 @@
 <?php require_once "classes/Computer.php";?>
+<?php require_once "classes/Employee.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +16,9 @@
      $computers[] = new Computer(" Lakyho počítač", " Amd Ryzen 7 3700X"," Nvidia GeForce 1660 6GB"," 1TB"," 16GB"," Gigabyte"," Corsair 650W");
      $computers[] = new Computer(" Franty počítač", " Amd Ryzen 5 3600X"," Nvidia RTX 2080 8GB"," 2TB"," 32GB"," Asus"," Asus 800W");
      $computers[] = new Computer(" Honzy počítač", " Intel Core i9 10900k"," Nvidia RTX 3090 16GB"," 5TB"," 64GB"," Asus"," Corsair 1200W");
-     ?>
     
+     $employee[] = new Employee("Štěpán","Kolarovský","stepan.kolarovsky@student.ossp.cz","123 456 789","kpt.jaroše","Velký Osek",$computer[1])
+    ?>
 <h1>Výpis Názvů</h1>
     <?php
     foreach ($computers as $computer){echo $computer->getname() . "<br>";}
