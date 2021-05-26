@@ -9,7 +9,7 @@
     private $city;
     private $computer;
     
-    public function __construct(string $firstname, string $lastname, string $email,string $phone, string $street, string $city, string $computer) {
+    public function __construct(string $firstname, string $lastname, string $email, int $phone, string $street, string $city, Computer $computer) {
         $this ->firstname = $firstname;
         $this ->lastname = $lastname;
         $this ->email = $email;
@@ -24,26 +24,26 @@ public function summary() {
     echo "<br>";
 
 }
-public function getfirstname() {
+public function getFirstname() {
     return $this->firstname;
 }
-public function getlastname() {
+public function getLastname() {
     return $this->lastname;
 }
 
-public function getemail() {
+public function getEmail() {
     return $this->email;
 }
-public function getphone() {
+public function getPhone() {
     return $this->phone;
 }
-public function getstreet() {
+public function getStreet() {
     return $this->street;
 }
-public function getcity() {
+public function getCity() {
     return $this->city;
 }
-public function getcomputer() {
+public function getComputer() {
     return $this->computer;
 }
 

@@ -17,7 +17,7 @@
      $computers[] = new Computer(" Franty počítač", " Amd Ryzen 5 3600X"," Nvidia RTX 2080 8GB"," 2TB"," 32GB"," Asus"," Asus 800W");
      $computers[] = new Computer(" Honzy počítač", " Intel Core i9 10900k"," Nvidia RTX 3090 16GB"," 5TB"," 64GB"," Asus"," Corsair 1200W");
     
-     $employee[] = new Employee("Štěpán","Kolarovský","stepan.kolarovsky@student.ossp.cz","123 456 789","kpt.jaroše","Velký Osek",$computer[1])
+     $employees[] = new Employee("Štěpán","Kolarovský","stepan.kolarovsky@student.ossp.cz",123456789,"kpt.jaroše","Velký Osek",$computers[1])
     ?>
 <h1>Výpis Názvů</h1>
     <?php
@@ -47,5 +47,11 @@
     <?php
     foreach ($computers as $computer){echo $computer->getpsu() . "<br>";}
 ?>
+?>
+<h1>Výpis Employee</h1>
+    <?php
+    foreach ($employees as $employee){echo $employee->getFirstname();echo $employee -> getComputer() -> getCPU() . "<br>";}
+?>
+
 </body>
 </html>

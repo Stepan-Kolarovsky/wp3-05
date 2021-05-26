@@ -24,26 +24,26 @@ public function summary() {
     echo "<br>";
 
 }
-public function getname() {
+public function getName() {
     return $this->name;
 }
-public function getcpu() {
+public function getCpu() {
     return $this->cpu;
 }
 
-public function getgpu() {
+public function getGpu() {
     return $this->gpu;
 }
-public function getssd() {
+public function getSsd() {
     return $this->ssd;
 }
-public function getram() {
+public function getRam() {
     return $this->ram;
 }
-public function getmb() {
+public function getMb() {
     return $this->mb;
 }
-public function getpsu() {
+public function getPsu() {
     return $this->psu;
 }
 
