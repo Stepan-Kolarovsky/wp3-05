@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -42,3 +43,27 @@
 
 </body>
 </html>
+*/
+<?php
+    $i=1;
+    echo "<table>";
+    foreach ($employees as $employee) {
+    echo "<tr>";
+    echo "<td>" . $i++ . "</td>";
+    echo "<td>" . $employee->getFirstname() . "</td>";
+    echo "<td>" . $employee->getLastname() . "</td>";
+    echo "<td>" . $employee->getEmail() . "</td>";
+    echo "<td>" . $employee->getPhone() . "</td>";
+    echo "<td>" . $employee->getStreet() . "</td>";
+    echo "<td>" . $employee->getCity() . "</td>";
+    echo "<td>" . $employee->getComputer()->getCPU() . "</td>";
+    echo "<td>" . $employee->getComputer()->getSSD() . "</td>";
+    echo "<td>" . $employee->getComputer()->getGPU() . "</td>";
+    echo "<td>" . $employee->getComputer()->getRAM() . "</td>";
+    echo "<td>" . $employee->getComputer()->getMB() . "</td>";
+    echo "<td>" . $employee->getComputer()->getPSU() . "</td>";
+    echo "</tr>";
+    }
+    echo "</table>";
+    ?>
+*/
